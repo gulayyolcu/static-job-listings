@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+:root{
+    --primary:hsl(180, 29%, 50%);
+    --background:hsl(180, 52%, 96%);
+    --filterTables:hsl(180, 31%, 95%);
+    --darkCyan:hsl(180, 8%, 52%);
+    --veryDarkDark:hsl(180, 14%, 20%);
+}
+
+html,*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+
+body{
+    font-family:'Spartan',sans-serif;
+    font-size:15px;
+    background-color: var(--background);
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    width:100%;
+    height:156px;
+    margin:0;
+    padding:0;
+    background: url('../images/bg-header-desktop.svg') repeat #5ba4a4;
+    background-position: top center;
+    background-size: 100%;
+}
+
+.skillSearch{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: border-box;
+  max-width:1150px;
+  width:100%;
+  height:auto;
+  margin:auto;
+  margin-top:-40px;
+  margin-bottom:40px;
+  background-color: #fff;
+  box-shadow:0px 5px 10px hsl(180, 29%, 80%);
+  border-radius: 5px;
+  padding:20px 30px;
+} 
+
+.container{
+  width:100%;
+  height:max-content;
+}
+
+.card{
+  display:flex;
+  justify-content:space-between;
+  max-width: 1150px;
+  width:100%;
+  height:max-content;
+  margin:auto;
+  box-sizing: border-box;
+  padding:35px;
+  box-shadow:0px 5px 10px hsl(180, 29%, 80%);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom:40px;
+}
+
+.cardFirst{
+  display:flex;
+  flex-direction: row;
+}
+
+.cardSecond hr{
+  display:none;
+}
+
+.cardSecond{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+
+.flex{
+  display:flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.imgLogo img{
+  margin-right:20px;
+}
+
+.company{
+  color:var(--primary);
+  font-weight:700;
+  display:inline-flex;
+  margin-right:20px;
+}
+
+.personInfo{
+  display:flex;
+  align-items: center;
+  margin-bottom:10px;
+}
+
+#isNew{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px 8px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:700;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: var(--primary);
+  margin-right:10px;
+  padding-top:8px;
+}
+
+.featured{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px 8px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:700;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: var(--veryDarkDark);
+  padding-top:8px;
+}
+
+.jobPos h3{
+  color:var(--veryDarkDark);
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.postContLoc .post{
+  display:flex;
+}
+
+.post li:first-child{
+  margin-left:-8px;
+}
+
+.post li{
+  display:inline-flex;
+  margin-right:8px;
+  margin-left:8px;
+  color:var(--darkCyan);
+  font-size:15px;
+}
+
+.post li:first-child{
+  margin-left:0px;
+}
+
+.postContLoc .post .blank{
+  width:5px;
+  height:5px;
+  align-items: center;
+  background-color: var(--darkCyan);
+  border-radius:50%;
+  margin-top:5px;
+
+}
+
+#langTool{
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#langTool .skills{
+  display:flex;
+
+  align-items: center;
+}
+
+#langTool .skills li{
+  margin-left:15px;
+  padding:5px;
+  background-color: var(--background);
+  color:var(--primary);
+  font-weight:700;
+  border-radius:5px;
+}
+
+
+
+
+/* #langTool .skills li:last-child{
+  margin-left:15px;
+  margin-right:15px;
+  padding:5px;
+  background-color: var(--background);
+  color:var(--primary);
+  font-weight:700;
+  border-radius:5px;
+} */
+
+.card:first-child{
+  border-left:5px solid var(--primary);
+}
+
+.card:nth-child(2){
+  border-left:5px solid var(--primary);
+}
+
+.attribution{
+  padding:20px;
+}
+
+.attribution a{
+  color:var(--primary);
+  align-self: flex-end;
+}
+
+.added{
+
+  margin-left:15px;
+  padding:5px; 
+  background-color: var(--primary);
+  font-weight:700;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  color:#fff;
+  text-align: center;
+  font-size:15px;
+}
+
+.added span{
+  background-color: var(--background);
+  color:var(--primary);
+  margin:0;
+  padding:5px;
+  margin-left:-5px;
+  margin-right:5px;
+  font-weight:700;
+  font-size:15px;
+}
+
+.clear{
+  background-color: #fff;
+  border:none;
+  outline:none;
+}
+
+.clear a{
+  background-color:none;
+  font-weight:700;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  color:var(--primary);
+  text-align: center;
+  font-size:15px;
+  font-weight:700;
+}
+
+.clear:hover{
+  text-decoration: underline;
+  color:var(--primary);
+}
+
+@media screen and (max-width:900px){
+
+  header{
+    background: url('../images/bg-header-mobile.svg') repeat #5ba4a4;
+  }
+  body{
+    overflow-x:hidden;
+    font-size:12px;
+  }
+
+  .container{
+    width:100%;
+    height:max-content;
+  }  
+
+  .skillSearch{
+    max-width:400px;
+    width:100%;
+    height:auto;
+    flex-direction:row;
+    margin:auto;
+    box-shadow:0px 5px 10px hsl(180, 29%, 80%);
+    transform:translateY(-50%);
+    padding:20px 20px 20px 0;
+    margin-bottom:20px;
+  }
+
+  .new{
+    font-size: 10px;
+  }
+  
+  .featured{
+    font-size: 10px;
+  }
+
+  .buttonAdded .added{
+      margin-bottom:10px;
+  }
+
+  .card{
+    max-width:400px;
+    width:100%;
+    height:max-content;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom:60px;
+  }
+
+  .cardFirst{
+    flex-direction: column;
+
+  }
+
+  .cardSecond{
+    flex-wrap: wrap;
+    padding-top:40px;
+    justify-content:flex-start;
+    padding-left:0;
+    margin-top:50px;
+    margin-bottom:-150px;
+  }
+
+  .cardSecond .skills{
+    padding-left:0;
+  }
+
+  .cardSecond hr{
+    display:block;
+    width:320px;
+    color:rgba(0,0,0,0.2);
+    margin-bottom:20px;
+    margin-left:20px;
+  }
+
+  #langTool .skills{
+    flex-wrap: wrap;
+  }
+
+  #langTool .skills li{
+    margin-bottom:10px;
+    margin-right:20px;
+  }
+
+  .mid{
+    padding:20px;
+    transform:translateY(-90%);
+    margin-bottom:-50px;
+    margin-top:10px;
+  }
+
+  .cardFirst .imgLogo{
+    margin-bottom:20px;
+   
+  }
+
+  .post li{
+    font-size:12px;
+  }
+
+  .cardFirst .imgLogo img{
+    width:25%;
+    margin-left:15px;
+    margin-top:-70px;
+    margin-bottom:70px;
+    
+  } 
+
+  .cardFirst{
+    transform: translate(-10%);
+  } 
+
+  .cardSecond{
+    transform: translate(-8%,-120%);
+  }
+
+}
+
+
+
+
